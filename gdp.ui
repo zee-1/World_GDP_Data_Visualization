@@ -1,0 +1,359 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>list1</class>
+ <widget class="QDialog" name="list1">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <widget class="QWidget" name="MainWin" native="true">
+   <property name="geometry">
+    <rect>
+     <x>-1</x>
+     <y>-1</y>
+     <width>801</width>
+     <height>601</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QWidget#MainWin{
+background-color:rgb(5, 147, 130);
+}</string>
+   </property>
+   <widget class="QLabel" name="Head">
+    <property name="geometry">
+     <rect>
+      <x>260</x>
+      <y>30</y>
+      <width>251</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color:'black';
+font: 57 36pt &quot;Noto Sans&quot;;</string>
+    </property>
+    <property name="text">
+     <string>World GDP</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="sub_head1">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>130</y>
+      <width>251</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color:'black';
+font: 25 17pt &quot;Noto Sans&quot;;</string>
+    </property>
+    <property name="text">
+     <string>Year Wise Comaprison</string>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="comboBox_2">
+    <property name="geometry">
+     <rect>
+      <x>90</x>
+      <y>170</y>
+      <width>161</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color:'black';
+background-color:rgb(121, 135, 139);</string>
+    </property>
+    <property name="editable">
+     <bool>true</bool>
+    </property>
+    <item>
+     <property name="text">
+      <string>--Select Year--</string>
+     </property>
+    </item>
+   </widget>
+   <widget class="QPushButton" name="yearly">
+    <property name="geometry">
+     <rect>
+      <x>640</x>
+      <y>160</y>
+      <width>92</width>
+      <height>37</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Compare</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="sub_head2">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>230</y>
+      <width>251</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color:'black';
+font: 25 17pt &quot;Noto Sans&quot;;</string>
+    </property>
+    <property name="text">
+     <string>Campare Countries</string>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="comboBox_3">
+    <property name="geometry">
+     <rect>
+      <x>90</x>
+      <y>280</y>
+      <width>261</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color:'black';
+background-color:rgb(121, 135, 139);</string>
+    </property>
+    <property name="editable">
+     <bool>true</bool>
+    </property>
+    <item>
+     <property name="text">
+      <string>-- Select Country--</string>
+     </property>
+    </item>
+   </widget>
+   <widget class="QPushButton" name="add">
+    <property name="geometry">
+     <rect>
+      <x>400</x>
+      <y>280</y>
+      <width>92</width>
+      <height>37</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Add</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="show">
+    <property name="geometry">
+     <rect>
+      <x>640</x>
+      <y>280</y>
+      <width>92</width>
+      <height>37</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Show</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="sub_head3">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>370</y>
+      <width>421</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color:'black';
+font: 25 17pt &quot;Noto Sans&quot;;</string>
+    </property>
+    <property name="text">
+     <string>Top Contributors</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="count">
+    <property name="geometry">
+     <rect>
+      <x>100</x>
+      <y>318</y>
+      <width>251</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color:'black'</string>
+    </property>
+    <property name="text">
+     <string>0 countries selected</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="reset">
+    <property name="geometry">
+     <rect>
+      <x>510</x>
+      <y>280</y>
+      <width>92</width>
+      <height>37</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Reset</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="show_2">
+    <property name="geometry">
+     <rect>
+      <x>640</x>
+      <y>410</y>
+      <width>92</width>
+      <height>37</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Show</string>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="comboBox_4">
+    <property name="geometry">
+     <rect>
+      <x>90</x>
+      <y>420</y>
+      <width>161</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color:'black';
+background-color:rgb(121, 135, 139);</string>
+    </property>
+    <property name="editable">
+     <bool>true</bool>
+    </property>
+    <item>
+     <property name="text">
+      <string>--Select Year--</string>
+     </property>
+    </item>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>240</x>
+      <y>560</y>
+      <width>331</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color:'black'</string>
+    </property>
+    <property name="text">
+     <string>Made By: Mohammad Zaid Khan &amp; Vinayak Rana</string>
+    </property>
+   </widget>
+   <widget class="QWidget" name="widget" native="true">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>130</y>
+      <width>721</width>
+      <height>81</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color:'white';
+border-radius:15px;</string>
+    </property>
+   </widget>
+   <widget class="QWidget" name="widget_2" native="true">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>230</y>
+      <width>721</width>
+      <height>111</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color:'white';
+border-radius:15px;</string>
+    </property>
+   </widget>
+   <widget class="QWidget" name="widget_3" native="true">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>360</y>
+      <width>721</width>
+      <height>101</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color:'white';
+border-radius:15px;</string>
+    </property>
+   </widget>
+   <widget class="QWidget" name="widget_4" native="true">
+    <property name="geometry">
+     <rect>
+      <x>250</x>
+      <y>20</y>
+      <width>271</width>
+      <height>81</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color:'white';
+border-radius:15px</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>640</x>
+      <y>580</y>
+      <width>161</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Data Source: World Bank</string>
+    </property>
+   </widget>
+   <zorder>widget_4</zorder>
+   <zorder>widget_3</zorder>
+   <zorder>widget_2</zorder>
+   <zorder>widget</zorder>
+   <zorder>Head</zorder>
+   <zorder>sub_head1</zorder>
+   <zorder>comboBox_2</zorder>
+   <zorder>yearly</zorder>
+   <zorder>sub_head2</zorder>
+   <zorder>comboBox_3</zorder>
+   <zorder>add</zorder>
+   <zorder>show</zorder>
+   <zorder>sub_head3</zorder>
+   <zorder>count</zorder>
+   <zorder>reset</zorder>
+   <zorder>show_2</zorder>
+   <zorder>comboBox_4</zorder>
+   <zorder>label</zorder>
+   <zorder>label_2</zorder>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

@@ -1,0 +1,4 @@
+seaborn
+pyqt5
+plotly
+pandas
